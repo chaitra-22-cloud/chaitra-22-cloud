@@ -229,7 +229,7 @@
       <div class="title">
         <h2>Career Objective</h2>
         <p>
-          Passionate MCA student with strong interest in modern web development and creative UI designing. 
+          Passionate MCA student with strong interest in modern web development and cloud computing. 
           Dedicated to building responsive and user-friendly applications with innovative ideas and attractive interfaces.
         </p>
       </div>
@@ -270,8 +270,7 @@
       <div class="achievement">
         <h3>🏆 Achievement Goal</h3>
         <p>
-          My goal is to become a professional full-stack developer and create innovative web applications that improve user experience and solve real-world problems.
-        </p>
+          My goal is to become a skilled Cloud Computing professional and develop secure, scalable, and efficient cloud-based solutions for modern applications.</p>
       </div>
 
       <div class="footer">
