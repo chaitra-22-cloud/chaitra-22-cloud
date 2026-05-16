@@ -1,285 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chaitra Naik | Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaitra Naik | Portfolio Resume</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
       font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
     }
 
     body{
-      background:linear-gradient(135deg,#fdfbfb,#ebedee);
-      color:#333;
-      padding:40px;
+      background:#0f172a;
+      color:white;
+      overflow-x:hidden;
     }
 
-    .resume{
-      max-width:1100px;
-      margin:auto;
-      background:#fff;
-      border-radius:25px;
-      overflow:hidden;
-      box-shadow:0 10px 35px rgba(0,0,0,0.15);
-      display:grid;
-      grid-template-columns:320px 1fr;
+    .container{
+      width:100%;
+      min-height:100vh;
+      padding:40px 8%;
+      background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
     }
 
-    .left{
-      background:linear-gradient(180deg,#ff9a9e,#fad0c4);
-      color:#fff;
-      padding:40px 30px;
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:60px;
     }
 
-    .profile{
-      text-align:center;
-      margin-bottom:35px;
-    }
-
-    .profile img{
-      width:140px;
-      height:140px;
-      border-radius:50%;
-      border:5px solid white;
-      object-fit:cover;
-      margin-bottom:15px;
-    }
-
-    .profile h1{
-      font-size:30px;
+    .logo{
+      font-size:32px;
       font-weight:700;
+      color:#38bdf8;
     }
 
-    .profile p{
-      font-size:15px;
-      margin-top:8px;
-    }
-
-    .section{
-      margin-bottom:35px;
-    }
-
-    .section h2{
-      font-size:20px;
-      margin-bottom:15px;
-      border-bottom:2px solid rgba(255,255,255,0.4);
-      padding-bottom:8px;
-    }
-
-    .section p,
-    .section li{
-      font-size:14px;
-      line-height:1.8;
+    nav ul{
+      display:flex;
+      gap:25px;
       list-style:none;
     }
 
-    .skills span{
-      display:inline-block;
-      background:rgba(255,255,255,0.25);
-      padding:8px 14px;
-      border-radius:30px;
-      margin:6px 4px;
-      font-size:13px;
-      backdrop-filter:blur(5px);
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+      font-size:15px;
     }
 
-    .right{
-      padding:45px;
+    nav ul li a:hover{
+      color:#38bdf8;
     }
 
-    .title{
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 400px;
+      gap:60px;
+      align-items:center;
+      margin-bottom:80px;
+    }
+
+    .hero-text h1{
+      font-size:65px;
+      line-height:1.2;
+      margin-bottom:20px;
+    }
+
+    .hero-text span{
+      color:#38bdf8;
+    }
+
+    .hero-text p{
+      color:#cbd5e1;
+      line-height:1.9;
+      font-size:16px;
       margin-bottom:30px;
     }
 
-    .title h2{
-      font-size:34px;
-      color:#ff758c;
-      margin-bottom:10px;
-    }
-
-    .title p{
-      font-size:15px;
-      line-height:1.8;
-      color:#555;
-    }
-
-    .card{
-      background:#fff;
-      border-left:5px solid #ff758c;
-      padding:22px;
-      margin-bottom:25px;
-      border-radius:18px;
-      box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    .btn{
+      display:inline-block;
+      padding:14px 32px;
+      background:#38bdf8;
+      color:#0f172a;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:600;
       transition:0.3s;
+      box-shadow:0 0 25px rgba(56,189,248,0.5);
     }
 
-    .card:hover{
+    .btn:hover{
       transform:translateY(-5px);
     }
 
+    .hero-image{
+      position:relative;
+      display:flex;
+      justify-content:center;
+    }
+
+    .hero-image img{
+      width:350px;
+      height:350px;
+      border-radius:50%;
+      object-fit:cover;
+      border:8px solid rgba(56,189,248,0.4);
+      box-shadow:0 0 40px rgba(56,189,248,0.5);
+    }
+
+    .section-title{
+      font-size:38px;
+      margin-bottom:40px;
+      text-align:center;
+      color:#38bdf8;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-bottom:80px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      padding:30px;
+      border-radius:25px;
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.4s;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#38bdf8;
+    }
+
     .card h3{
-      color:#ff758c;
-      margin-bottom:10px;
-      font-size:22px;
+      margin-bottom:18px;
+      color:#38bdf8;
+      font-size:24px;
     }
 
-    .card p{
+    .card p,
+    .card li{
+      color:#cbd5e1;
+      line-height:1.8;
       font-size:15px;
-      line-height:1.9;
-      color:#555;
     }
 
-    .project-list li{
-      margin-bottom:10px;
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:15px;
+    }
+
+    .skills span{
+      background:#38bdf8;
+      color:#0f172a;
+      padding:10px 18px;
+      border-radius:30px;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .project{
+      background:linear-gradient(135deg,#1e293b,#0f172a);
+      padding:40px;
+      border-radius:25px;
+      margin-bottom:80px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .project h2{
+      color:#38bdf8;
+      margin-bottom:20px;
+      font-size:35px;
+    }
+
+    .project p{
+      color:#cbd5e1;
+      line-height:2;
+      margin-bottom:20px;
+    }
+
+    .project ul{
       margin-left:20px;
-      color:#444;
     }
 
-    .achievement{
-      background:linear-gradient(135deg,#ffecd2,#fcb69f);
-      padding:20px;
-      border-radius:18px;
-      margin-top:20px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    }
-
-    .achievement h3{
-      color:#ff5e78;
-      margin-bottom:10px;
+    .project ul li{
+      margin-bottom:12px;
+      color:#e2e8f0;
+      line-height:1.8;
     }
 
     .footer{
       text-align:center;
-      margin-top:25px;
-      color:#888;
-      font-size:14px;
+      padding:30px;
+      color:#94a3b8;
+      border-top:1px solid rgba(255,255,255,0.1);
     }
 
-    @media(max-width:900px){
-      .resume{
+    @media(max-width:950px){
+
+      .hero{
         grid-template-columns:1fr;
+        text-align:center;
       }
 
-      .right{
-        padding:30px;
+      .hero-text h1{
+        font-size:45px;
       }
+
+      .hero-image img{
+        width:280px;
+        height:280px;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
     }
+
   </style>
 </head>
 <body>
 
-  <div class="resume">
+  <div class="container">
 
-    <div class="left">
+    <nav>
+      <div class="logo">Chaitra.</div>
 
-      <div class="profile">
-        <img src="https://i.pinimg.com/736x/f2/22/0d/f2220df5f6496df19d1bff2b2fbbf6b6.jpg" alt="profile">
-        <h1>Chaitra Naik</h1>
-        <p>MCA Student • Web Developer</p>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <section class="hero" id="about">
+
+      <div class="hero-text">
+
+        <h1>Hello, I'm <span>Chaitra Naik</span></h1>
+
+        <p>
+          MCA student passionate about Cloud Computing, Web Development, and UI Designing.
+          I love creating attractive, responsive, and user-friendly web applications with modern technologies.
+          My goal is to build innovative cloud-based solutions that solve real-world problems.
+        </p>
+
+        <a href="#project" class="btn">View Project</a>
+
       </div>
 
-      <div class="section">
-        <h2>Contact</h2>
-        <p>Karnataka, India</p>
-        <p>naikchaitra28@gmail.com</p>
-        <p> +91 XXXXX XXXXX</p>
-        <p> github.com/chaitra</p>
+      <div class="hero-image">
+
+        <img src="https://i.pinimg.com/736x/f2/22/0d/f2220df5f6496df19d1bff2b2fbbf6b6.jpg" alt="Profile Image">
+
       </div>
 
-      <div class="section">
-        <h2>Skills</h2>
+    </section>
+
+
+    <h2 class="section-title" id="skills">My Skills</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Frontend</h3>
+
+        <p>
+          Creating responsive and visually attractive websites using modern frontend technologies.
+        </p>
+
         <div class="skills">
           <span>HTML5</span>
           <span>CSS3</span>
           <span>JavaScript</span>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Backend</h3>
+
+        <p>
+          Basic backend development and database connectivity for dynamic web applications.
+        </p>
+
+        <div class="skills">
+          <span>PHP</span>
           <span>MySQL</span>
           <span>Python</span>
         </div>
+
       </div>
 
-      <div class="section">
-        <h2>Languages</h2>
-        <ul>
-          <li>English</li>
-          <li>Hindi</li>
-          <li>Kannada</li>
-           <li>Konkani</li>
-        </ul>
-      </div>
+      <div class="card">
 
-      <div class="section">
-        <h2>Hobbies</h2>
-        <ul>
-          <li>Web Designing</li>
-          <li> Listening Music</li>
-          <li>Creative Editing</li>
-        </ul>
+        <h3>Cloud & Tools</h3>
+
+        <p>
+          Learning cloud computing concepts and using modern tools for development.
+        </p>
+
+        <div class="skills">
+          <span>Cloud Basics</span>
+          <span>GitHub</span>
+          <span>UI Design</span>
+        </div>
+
       </div>
 
     </div>
 
-    <div class="right">
 
-      <div class="title">
-        <h2>Career Objective</h2>
+    <section class="project" id="project">
+
+      <h2>🚀 Major Project</h2>
+
+      <p>
+        <strong>Event Management System</strong>
+      </p>
+
+      <ul>
+        <li>Developed a web-based event booking platform for weddings and birthday events.</li>
+
+        <li>Implemented catering cart system with dynamic item updates.</li>
+
+        <li>Created decoration gallery with booking functionality.</li>
+
+        <li>Designed responsive UI using HTML, CSS, and JavaScript.</li>
+
+        <li>Integrated LocalStorage for dynamic cart management.</li>
+
+        <li>Added booking confirmation and user profile features.</li>
+      </ul>
+
+    </section>
+
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>🎓 MCA</h3>
+
         <p>
-          Passionate MCA student with strong interest in modern web development and cloud computing. 
-          Dedicated to building responsive and user-friendly applications with innovative ideas and attractive interfaces.
+          Pursuing Master of Computer Applications with specialization in Cloud Computing and Web Technologies.
         </p>
+
       </div>
 
       <div class="card">
-        <h3>Education</h3>
+
+        <h3>🌐 Career Goal</h3>
+
         <p>
-          <strong>Master of Computer Applications (MCA)</strong><br>
-          Pursuing MCA with specialization in cloud computing and web technologies.
+          To become a professional Cloud Computing engineer and develop secure, scalable, and innovative cloud-based applications.
         </p>
+
       </div>
 
       <div class="card">
-        <h3> Major Project</h3>
-        <p><strong>Event Management System</strong></p>
 
-        <ul class="project-list">
-          <li>Developed a complete event booking platform for weddings and birthday events.</li>
-          <li>Implemented catering cart system with dynamic price updates.</li>
-          <li>Created attractive decoration gallery with booking functionality.</li>
-          <li>Used LocalStorage for storing cart items dynamically.</li>
-          <li>Designed responsive pages using HTML, CSS and JavaScript.</li>
-          <li>Integrated user profile management and booking confirmation system.</li>
-        </ul>
+        <h3>💡 Interests</h3>
+
+        <p>
+          UI Designing, Cloud Technologies, Frontend Development, Creative Web Interfaces, and Modern Applications.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <h2 class="section-title" id="contact">Contact</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>📧 Email</h3>
+
+        <p>chaitra@email.com</p>
+
       </div>
 
       <div class="card">
-        <h3>Technical Highlights</h3>
-        <p>
-          ✔ Responsive Website Design<br>
-          ✔ Dynamic Cart Functionality<br>
-          ✔ User Interface Designing<br>
-          ✔ Frontend Development<br>
-          ✔ Database Connectivity Basics
-        </p>
+
+        <h3>💻 GitHub</h3>
+
+        <p>github.com/chaitra</p>
+
       </div>
 
-      <div class="achievement">
-        <h3> Achievement Goal</h3>
-        <p>
-          My goal is to become a skilled Cloud Computing professional and develop secure, scalable, and efficient cloud-based solutions for modern applications.</p>
+      <div class="card">
+
+        <h3>📍 Location</h3>
+
+        <p>Karnataka, India</p>
+
       </div>
 
-      <div class="footer">
-        Designed with ❤ by Chaitra Naik
-      </div>
+    </div>
 
+
+    <div class="footer">
+      Designed with ❤ by Chaitra Naik
     </div>
 
   </div>
 
 </body>
 </html>
-
