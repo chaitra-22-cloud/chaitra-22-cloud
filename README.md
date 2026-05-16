@@ -106,7 +106,6 @@ To become a professional **Cloud Computing Engineer** and develop secure, scalab
 
 - Cloud Technologies ☁
 - Web Designing 💻
-- Coding Projects 👩‍💻
 - UI Designing 🎨
 - Creative Editing ✨
 - Exploring Modern Technologies 🚀
