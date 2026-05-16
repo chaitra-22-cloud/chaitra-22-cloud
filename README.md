@@ -2,7 +2,7 @@ Chaitra Naik
 MCA Student | Cloud Computing Enthusiast | Web Developer
 
 📍 Karnataka, India
-📧 chaitranaik@email.com
+📧 naikchaitra28@gmail.com
 💻 GitHub: github.com/chaitra
 🌐 Passionate about building creative and modern web applications
 
@@ -16,21 +16,17 @@ HTML5
 CSS3
 JavaScript
 Backend & Database
-PHP
 MySQL
 Python
-Cloud & Tools
 Cloud Computing Basics
-Git & GitHub
 UI/UX Designing
+
 📚 Education
 Master of Computer Applications (MCA)
-
 Specialization in Cloud Computing and Web Technologies
 
 💡 Major Project
 Event Management System
-
 A complete web-based platform developed for managing weddings, birthday events, catering services, decorations, and venue booking.
 
 Features:
@@ -40,8 +36,8 @@ Decoration gallery with booking options
 LocalStorage cart management
 User profile and booking confirmation system
 Attractive and interactive user interface
-Technologies Used:
 
+Technologies Used:
 HTML, CSS, JavaScript, PHP, MySQL
 
 ☁ Career Goal
@@ -54,16 +50,19 @@ Problem Solving
 Team Collaboration
 Quick Learner
 Communication Skills
+
 🌍 Languages Known
 English
 Hindi
 Kannada
 Konkani
+
 🎨 Interests & Hobbies
 Cloud Technologies
 Web Designing
 Coding Projects
 UI Designing
 Creative Editing
+
 Exploring Modern Technologies
 ⭐ “Designing modern digital experiences with creativity and innovation.”
