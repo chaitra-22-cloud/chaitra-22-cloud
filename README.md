@@ -136,7 +136,6 @@
 
     .project-list li{
       margin-bottom:10px;
-      list-style:'✨ ';
       margin-left:20px;
       color:#444;
     }
@@ -186,17 +185,17 @@
 
       <div class="section">
         <h2>Contact</h2>
-        <p>📍 Karnataka, India</p>
-        <p>📧 chaitra@email.com</p>
-        <p>📱 +91 XXXXX XXXXX</p>
-        <p>💻 github.com/chaitra</p>
+        <p>Karnataka, India</p>
+        <p>naikchaitra28@gmail.com</p>
+        <p> +91 XXXXX XXXXX</p>
+        <p> github.com/chaitra</p>
       </div>
 
       <div class="section">
         <h2>Skills</h2>
         <div class="skills">
           <span>HTML5</span>
-          <span>CSS</span>
+          <span>CSS3</span>
           <span>JavaScript</span>
           <span>MySQL</span>
           <span>Python</span>
@@ -216,9 +215,9 @@
       <div class="section">
         <h2>Hobbies</h2>
         <ul>
-          <li>🎨 Web Designing</li>
-          <li>🎵 Listening Music</li>
-          <li>📸 Creative Editing</li>
+          <li>Web Designing</li>
+          <li> Listening Music</li>
+          <li>Creative Editing</li>
         </ul>
       </div>
 
@@ -235,7 +234,7 @@
       </div>
 
       <div class="card">
-        <h3>🎓 Education</h3>
+        <h3>Education</h3>
         <p>
           <strong>Master of Computer Applications (MCA)</strong><br>
           Pursuing MCA with specialization in cloud computing and web technologies.
@@ -243,7 +242,7 @@
       </div>
 
       <div class="card">
-        <h3>🚀 Major Project</h3>
+        <h3> Major Project</h3>
         <p><strong>Event Management System</strong></p>
 
         <ul class="project-list">
@@ -257,7 +256,7 @@
       </div>
 
       <div class="card">
-        <h3>💡 Technical Highlights</h3>
+        <h3>Technical Highlights</h3>
         <p>
           ✔ Responsive Website Design<br>
           ✔ Dynamic Cart Functionality<br>
@@ -268,7 +267,7 @@
       </div>
 
       <div class="achievement">
-        <h3>🏆 Achievement Goal</h3>
+        <h3> Achievement Goal</h3>
         <p>
           My goal is to become a skilled Cloud Computing professional and develop secure, scalable, and efficient cloud-based solutions for modern applications.</p>
       </div>
